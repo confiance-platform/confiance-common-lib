@@ -4,14 +4,6 @@ target/
 *.jar
 *.war
 *.ear
-*.zip
-*.tar.gz
-*.rar
-
-# Eclipse
-.settings/
-.project
-.classpath
 
 # IntelliJ IDEA
 .idea/
@@ -19,27 +11,17 @@ target/
 *.iws
 *.ipr
 
-# VS Code
-.vscode/
+# Eclipse
+.settings/
+.project
+.classpath
 
 # Mac
 .DS_Store
 
 # Logs
-logs/
 *.log
 
 # Environment
 .env
 .env.local
-
-# Spring Boot
-application-local.yml
-application-local.properties
-
-# Database
-*.db
-*.sql
-
-# Docker
-docker-compose.override.yml
