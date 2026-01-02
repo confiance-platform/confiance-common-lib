@@ -31,6 +31,26 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         try {
             String jwt = extractJwtFromRequest(request);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             if (StringUtils.hasText(jwt)) {
                 log.debug("JWT token found in request for URI: {}", request.getRequestURI());
 

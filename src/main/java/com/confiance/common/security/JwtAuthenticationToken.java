@@ -21,7 +21,7 @@ public class JwtAuthenticationToken extends AbstractAuthenticationToken {
 
     private static Collection<? extends GrantedAuthority> mapRolesToAuthorities(JwtUser jwtUser) {
         return jwtUser.getRoles().stream()
-                .map(role -> new SimpleGrantedAuthority("ROLE_" + role.name()))
+                .map(role -> new SimpleGrantedAuthority(role.name()))
                 .collect(Collectors.toList());
     }
 
