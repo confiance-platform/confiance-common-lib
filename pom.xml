@@ -6,13 +6,23 @@
 
     <parent>
         <groupId>com.confiance</groupId>
-        <artifactId>confiance-backend</artifactId>
+        <artifactId>confiance-parent</artifactId>
         <version>1.0.0</version>
     </parent>
 
     <artifactId>common-lib</artifactId>
     <name>Common Library</name>
     <description>Shared DTOs, utilities, and exceptions</description>
+
+    <repositories>
+        <repository>
+            <id>github-parent</id>
+            <url>https://maven.pkg.github.com/confiance-platform/confiance-parent</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
     <dependencies>
         <!-- Spring Boot Starter -->
@@ -75,5 +85,13 @@
             <optional>true</optional>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/confiance-platform/confiance-common-lib</url>
+        </repository>
+    </distributionManagement>
 
 </project>
