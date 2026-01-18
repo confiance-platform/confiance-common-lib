@@ -7,10 +7,11 @@
     <parent>
         <groupId>com.confiance</groupId>
         <artifactId>confiance-parent</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
     </parent>
 
     <artifactId>common-lib</artifactId>
+    <version>1.0.1</version>
     <name>Common Library</name>
     <description>Shared DTOs, utilities, and exceptions</description>
 
