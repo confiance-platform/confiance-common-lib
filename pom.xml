@@ -92,6 +92,14 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
             <optional>true</optional>
         </dependency>
+
+        <!-- Service-to-service calls via the @LoadBalanced RestTemplate in Notifier.
+             Optional because only services that actually publish notifications pull it in transitively via spring-cloud-starter-netflix-eureka-client anyway. -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
+            <optional>true</optional>
+        </dependency>
     </dependencies>
 
     <distributionManagement>
