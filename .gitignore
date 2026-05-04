@@ -25,3 +25,7 @@ target/
 # Environment
 .env
 .env.local
+
+# macOS resource forks (added by automated cleanup)
+.DS_Store
+._*
